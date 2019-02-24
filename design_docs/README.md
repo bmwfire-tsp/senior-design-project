@@ -1,7 +1,7 @@
 # Shaka Streets Design Documentation
 
 ## Front-End
-**Description:** The Front-End should be allow the user to select a set of locations that they want to visit. After the user input is complete, a single list of locations (of type Array[ShakaNode]) should be sent to the Back-End.
+**Description:** The Front-End should allow the user to input $V$ locations that they want to visit. After the user input is complete, a single list of locations (of type Array[ShakaNode]) should be sent to the Back-End.
 
 ## Back-End
 **Description:** The Back-End should accept a single list of locations (of type Array[ShakaNode]) and compute the TSP algorithm to find the optimal path for the given locations. Once computed, it should reply to the Front-End with a given subset of the locations (of type Array[ShakaNode]) acknowledging the current order which should be traversed.

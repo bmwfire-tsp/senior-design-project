@@ -5,8 +5,6 @@ Multiple interfaces will provide functionality to retrieve map information (Goog
 
 ### protocol ShakaAddressAdapter
 
-
-
 **Methods:**
 - getCompleteAddress(address: String) => Array[String]
   - **Parameters:**
@@ -19,6 +17,8 @@ Multiple interfaces will provide functionality to retrieve map information (Goog
 
 ## Implementation
 
-### class GoogleMapsAddressAdapter: ShakaAddressAdapter
+### class GoogleMapsAddressAdapter
+**Description:** Google Maps API for address lookup
 
-### class AppleMapsAddressAdapter: ShakaAddressAdapter
+### class AppleMapsAddressAdapter
+**Description:** Apple Maps API for address lookup
