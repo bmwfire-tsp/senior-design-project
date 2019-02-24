@@ -1,5 +1,5 @@
 # Traveling Salesman Algorithm
-TSP is used to solve the optimal route between all the nodes within the Distance Matrix. This can be either done by an approximate or complete algorithm depending on input size.
+TSP is used to solve the optimal route between all the nodes within the Distance Matrix. This can be either done by an approximate or complete algorithm depending on input size. Implementations take advantage of the Composite Pattern to choose an appropriate TSP algorithm.
 
 ## Interface
 
@@ -20,8 +20,20 @@ TSP is used to solve the optimal route between all the nodes within the Distance
 
 ## Implementation
 
+### class TSPBest
+**Description:** Composite class. This should be the main TSP algorithm directly instantiated and all other TSP algorithms should be chosen depending on what is considered the best solution for the given input. 
+
+**Member Variables:**
+- matrix: ShakaDistanceMatrix
+  
+**Methods:**
+- constructor(matrix: ShakaDistanceMatrix)
+  - **Parameters:**
+    - matrix: ShakaDistanceMatrix (optional) -> Distance Matrix with edge weights for locations.
+
+
 ### class TSP
-**Description:** Complete solution to the Traveling Salesman Problem.
+**Description:** Leaf class. Complete solution to the Traveling Salesman Problem.
 
 **Member Variables:**
 - matrix: ShakaDistanceMatrix
@@ -32,13 +44,6 @@ TSP is used to solve the optimal route between all the nodes within the Distance
     - matrix: ShakaDistanceMatrix (optional) -> Distance Matrix with edge weights for locations.
 
 ### class TSPApproxMST
-**Description:** Approximate algorithm to the Traveling Salesman Problem. Will utilize a Minimum Spanning Tree to get an approximate solution.
+**Description:** Leaf class. Approximate algorithm to the Traveling Salesman Problem. Will utilize a Minimum Spanning Tree to get an approximate solution.
 
-**Member Variables:**
-- matrix: ShakaDistanceMatrix
-  
-**Methods:**
-- constructor(matrix: ShakaDistanceMatrix)
-  - **Parameters:**
-    - matrix: ShakaDistanceMatrix (optional) -> Distance Matrix with edge weights for locations.
 
