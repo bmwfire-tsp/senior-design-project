@@ -1,4 +1,6 @@
-func edgeComb(n: Int, k: Int) -> [[String]] {
+func edgeComb(locations: [String]) -> [[String]] {
+    let n = locations.count
+    let k = 2
     var edges = [[Int]]()
     var result = [[String]]()
     
@@ -24,6 +26,6 @@ func edgeComb(n: Int, k: Int) -> [[String]] {
     return result
 }
 let locations = ["Aiea", "Manoa", "Kalihi", "Ewa", "Honolulu"]
-let edges = edgeComb(n: locations.count, k: 2)
+let edges = edgeComb(locations: locations)
 print(locations)
 print(edges)
