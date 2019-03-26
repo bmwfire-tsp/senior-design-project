@@ -6,7 +6,9 @@
 //  Copyright © 2019 BMW Fire. All rights reserved.
 //
 
-protocol ShakaDistanceMatrix {
+import Foundation
+
+protocol Matrix {
     func addLocations(locations: Set<LocationNode>)
     func getEdgeWeight(source: LocationNode, dest: LocationNode) -> NSInteger
     func updateEdgeWeight(source: LocationNode, dest: LocationNode)
@@ -16,13 +18,13 @@ protocol ShakaDistanceMatrix {
     func removeLocations(locations: Set<LocationNode>)
 }
 
-class DistanceMatrix: ShakaDistanceMatrix {
+class DistanceMatrix: Matrix {
     var matrix: [LocationNode: [LocationNode: NSInteger]] = [:]
     var activeLocations: Set<LocationNode> = []
-    let edgeAdapter: ShakaEdgeAdapter
+    let edgeAdapter: EdgeAdapter
     
     
-    init(edgeAdapter: ShakaEdgeAdapter = GoogleEdgeAdapter()) {
+    init(edgeAdapter: EdgeAdapter = GoogleEdgeAdapter()) {
         self.edgeAdapter = edgeAdapter
     }
     

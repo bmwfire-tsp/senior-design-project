@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -111,10 +111,10 @@
 				730802B7224AD5C300C58459 /* Assets.xcassets */,
 				730802B9224AD5C300C58459 /* LaunchScreen.storyboard */,
 				730802BC224AD5C300C58459 /* Info.plist */,
-				73407CC4224ADC9700C21AF1 /* DistanceMatrix.swift */,
-				73407CC6224ADCE600C21AF1 /* EdgeAdapter.swift */,
-				73407CC8224ADD0E00C21AF1 /* GetEdgeWeight.swift */,
 				73407CCA224ADD4E00C21AF1 /* Node.swift */,
+				73407CC6224ADCE600C21AF1 /* EdgeAdapter.swift */,
+				73407CC4224ADC9700C21AF1 /* DistanceMatrix.swift */,
+				73407CC8224ADD0E00C21AF1 /* GetEdgeWeight.swift */,
 			);
 			path = iRoutePlanner;
 			sourceTree = "<group>";
@@ -217,7 +217,7 @@
 				};
 			};
 			buildConfigurationList = 730802A8224AD5BF00C58459 /* Build configuration list for PBXProject "iRoutePlanner" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (

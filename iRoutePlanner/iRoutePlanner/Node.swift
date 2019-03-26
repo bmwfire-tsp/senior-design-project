@@ -6,10 +6,10 @@
 //  Copyright © 2019 BMW Fire. All rights reserved.
 //
 
-protocol ShakaNode: Hashable {
+protocol Node: Hashable {
     var address: String { get }
 }
 
-struct LocationNode: ShakaNode {
+struct LocationNode: Node {
     var address: String
 }

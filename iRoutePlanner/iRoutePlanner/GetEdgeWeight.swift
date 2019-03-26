@@ -44,8 +44,3 @@ func getETA(origin: String, destination: String) -> NSInteger {
     task.cancel()
     return value
 }
-
-var invalid = getETA(origin: "Aiea", destination: "Los Angeles")
-var valid = getETA(origin: "Aiea", destination: "Honolulu")
-print("Value of two places that can't be reached: \(invalid)")
-print("Value of two places that can be reached: \(valid)")

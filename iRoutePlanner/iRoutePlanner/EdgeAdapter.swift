@@ -6,12 +6,13 @@
 //  Copyright © 2019 BMW Fire. All rights reserved.
 //
 
-protocol ShakaEdgeAdapter {
-    // Metric doesn't need to be specified since duration is hard coded
+import Foundation
+
+protocol EdgeAdapter {
     func getEdgeWeight(source: LocationNode, dest: LocationNode) -> NSInteger
 }
 
-class GoogleEdgeAdapter: ShakaEdgeAdapter {
+class GoogleEdgeAdapter: EdgeAdapter {
     func getEdgeWeight(source: LocationNode, dest: LocationNode) -> NSInteger {
         return getETA(origin: source.address, destination: dest.address)
     }
