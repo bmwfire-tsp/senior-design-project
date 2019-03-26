@@ -14,6 +14,10 @@
 		730802BB224AD5C300C58459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730802B9224AD5C300C58459 /* LaunchScreen.storyboard */; };
 		730802C6224AD5C400C58459 /* iRoutePlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730802C5224AD5C400C58459 /* iRoutePlannerTests.swift */; };
 		730802D1224AD5C400C58459 /* iRoutePlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730802D0224AD5C400C58459 /* iRoutePlannerUITests.swift */; };
+		73407CC5224ADC9700C21AF1 /* DistanceMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73407CC4224ADC9700C21AF1 /* DistanceMatrix.swift */; };
+		73407CC7224ADCE600C21AF1 /* EdgeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73407CC6224ADCE600C21AF1 /* EdgeAdapter.swift */; };
+		73407CC9224ADD0E00C21AF1 /* GetEdgeWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73407CC8224ADD0E00C21AF1 /* GetEdgeWeight.swift */; };
+		73407CCB224ADD4E00C21AF1 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73407CCA224ADD4E00C21AF1 /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		730802CC224AD5C400C58459 /* iRoutePlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iRoutePlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		730802D0224AD5C400C58459 /* iRoutePlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRoutePlannerUITests.swift; sourceTree = "<group>"; };
 		730802D2224AD5C400C58459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73407CC4224ADC9700C21AF1 /* DistanceMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceMatrix.swift; sourceTree = "<group>"; };
+		73407CC6224ADCE600C21AF1 /* EdgeAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeAdapter.swift; sourceTree = "<group>"; };
+		73407CC8224ADD0E00C21AF1 /* GetEdgeWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEdgeWeight.swift; sourceTree = "<group>"; };
+		73407CCA224ADD4E00C21AF1 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				730802B7224AD5C300C58459 /* Assets.xcassets */,
 				730802B9224AD5C300C58459 /* LaunchScreen.storyboard */,
 				730802BC224AD5C300C58459 /* Info.plist */,
+				73407CC4224ADC9700C21AF1 /* DistanceMatrix.swift */,
+				73407CC6224ADCE600C21AF1 /* EdgeAdapter.swift */,
+				73407CC8224ADD0E00C21AF1 /* GetEdgeWeight.swift */,
+				73407CCA224ADD4E00C21AF1 /* Node.swift */,
 			);
 			path = iRoutePlanner;
 			sourceTree = "<group>";
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73407CC5224ADC9700C21AF1 /* DistanceMatrix.swift in Sources */,
 				730802B3224AD5BF00C58459 /* ViewController.swift in Sources */,
+				73407CC7224ADCE600C21AF1 /* EdgeAdapter.swift in Sources */,
+				73407CCB224ADD4E00C21AF1 /* Node.swift in Sources */,
 				730802B1224AD5BF00C58459 /* AppDelegate.swift in Sources */,
+				73407CC9224ADD0E00C21AF1 /* GetEdgeWeight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

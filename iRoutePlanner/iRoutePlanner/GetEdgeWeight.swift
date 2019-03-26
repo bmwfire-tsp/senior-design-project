@@ -1,20 +1,21 @@
 //
-// GetEdgeWeight.swift 
+//  GetEdgeWeight.swift
+//  iRoutePlanner
 //
+//  Created by Ryuto Kitagawa on 3/7/19.
+//  Copyright © 2019 BMW Fire. All rights reserved.
 //
-// Created by Ryuto Kitagawa on 3/7/19 
-//
- 
+
 import Foundation
 
 let apiKey = "AIzaSyCrjARni6M94n5tNwj6SnsX-qdRNKEWVvk"
 
 func getETA(origin: String, destination: String) -> NSInteger {
     let modOrigin = origin.replacingOccurrences(of: " ", with: "+")
-    let modDestination = destination.replacingOccurrences(of: " ", with: "+") 
+    let modDestination = destination.replacingOccurrences(of: " ", with: "+")
     var value: NSInteger = -2
     
-    let url = URL(string: "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=" + modOrigin + "&destinations=" + modDestination + "&key=" + apiKey)! 
+    let url = URL(string: "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=" + modOrigin + "&destinations=" + modDestination + "&key=" + apiKey)!
     
     let task:URLSessionDataTask = URLSession.shared.dataTask(with: url) {(data, response, error) in
         guard let dataResponse = data else {value = -1; return}
@@ -26,11 +27,11 @@ func getETA(origin: String, destination: String) -> NSInteger {
                 let next = elements[0] as! NSDictionary
                 let nextElements = next["elements"] as! NSArray
                 let nextDur = nextElements[0] as! NSDictionary
-                if ((nextDur["status"] as! String) == "OK") { 
+                if ((nextDur["status"] as! String) == "OK") {
                     let duration = nextDur["duration"] as! NSDictionary
                     value = duration["value"] as! NSInteger
-                } else { value = -1 } 
-            } else { value = -1 } 
+                } else { value = -1 }
+            } else { value = -1 }
         } catch let parsingError {
             print("Error", parsingError)
         }
@@ -47,4 +48,4 @@ func getETA(origin: String, destination: String) -> NSInteger {
 var invalid = getETA(origin: "Aiea", destination: "Los Angeles")
 var valid = getETA(origin: "Aiea", destination: "Honolulu")
 print("Value of two places that can't be reached: \(invalid)")
-print("Value of two places that can be reached: \(valid)") 
+print("Value of two places that can be reached: \(valid)")

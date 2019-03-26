@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:iRoutePlanner.xcodeproj">
+      location = "group:/Users/bmw_fire/Documents/University of Hawaii at Manoa/Spring_2019/EE_496/senior-design-project/iRoutePlanner/iRoutePlanner/DistanceMatrix.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../iRoutePlanner/EdgeAdapter.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../iRoutePlanner/GetEdgeWeight.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../iRoutePlanner/Node.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
