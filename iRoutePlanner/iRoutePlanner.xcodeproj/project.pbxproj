@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		730802B1224AD5BF00C58459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730802B0224AD5BF00C58459 /* AppDelegate.swift */; };
+		730802B3224AD5BF00C58459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730802B2224AD5BF00C58459 /* ViewController.swift */; };
+		730802B6224AD5BF00C58459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730802B4224AD5BF00C58459 /* Main.storyboard */; };
+		730802B8224AD5C300C58459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 730802B7224AD5C300C58459 /* Assets.xcassets */; };
+		730802BB224AD5C300C58459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730802B9224AD5C300C58459 /* LaunchScreen.storyboard */; };
+		730802C6224AD5C400C58459 /* iRoutePlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730802C5224AD5C400C58459 /* iRoutePlannerTests.swift */; };
+		730802D1224AD5C400C58459 /* iRoutePlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730802D0224AD5C400C58459 /* iRoutePlannerUITests.swift */; };
+		73407CC5224ADC9700C21AF1 /* DistanceMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73407CC4224ADC9700C21AF1 /* DistanceMatrix.swift */; };
+		73407CC7224ADCE600C21AF1 /* EdgeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73407CC6224ADCE600C21AF1 /* EdgeAdapter.swift */; };
+		73407CC9224ADD0E00C21AF1 /* GetEdgeWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73407CC8224ADD0E00C21AF1 /* GetEdgeWeight.swift */; };
+		73407CCB224ADD4E00C21AF1 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73407CCA224ADD4E00C21AF1 /* Node.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		730802C2224AD5C400C58459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 730802A5224AD5BF00C58459 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 730802AC224AD5BF00C58459;
+			remoteInfo = iRoutePlanner;
+		};
+		730802CD224AD5C400C58459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 730802A5224AD5BF00C58459 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 730802AC224AD5BF00C58459;
+			remoteInfo = iRoutePlanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		730802AD224AD5BF00C58459 /* iRoutePlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRoutePlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		730802B0224AD5BF00C58459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		730802B2224AD5BF00C58459 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		730802B5224AD5BF00C58459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		730802B7224AD5C300C58459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		730802BA224AD5C300C58459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		730802BC224AD5C300C58459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		730802C1224AD5C400C58459 /* iRoutePlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iRoutePlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		730802C5224AD5C400C58459 /* iRoutePlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRoutePlannerTests.swift; sourceTree = "<group>"; };
+		730802C7224AD5C400C58459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		730802CC224AD5C400C58459 /* iRoutePlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iRoutePlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		730802D0224AD5C400C58459 /* iRoutePlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRoutePlannerUITests.swift; sourceTree = "<group>"; };
+		730802D2224AD5C400C58459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73407CC4224ADC9700C21AF1 /* DistanceMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceMatrix.swift; sourceTree = "<group>"; };
+		73407CC6224ADCE600C21AF1 /* EdgeAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeAdapter.swift; sourceTree = "<group>"; };
+		73407CC8224ADD0E00C21AF1 /* GetEdgeWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEdgeWeight.swift; sourceTree = "<group>"; };
+		73407CCA224ADD4E00C21AF1 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		730802AA224AD5BF00C58459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730802BE224AD5C400C58459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730802C9224AD5C400C58459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		730802A4224AD5BF00C58459 = {
+			isa = PBXGroup;
+			children = (
+				730802AF224AD5BF00C58459 /* iRoutePlanner */,
+				730802C4224AD5C400C58459 /* iRoutePlannerTests */,
+				730802CF224AD5C400C58459 /* iRoutePlannerUITests */,
+				730802AE224AD5BF00C58459 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		730802AE224AD5BF00C58459 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				730802AD224AD5BF00C58459 /* iRoutePlanner.app */,
+				730802C1224AD5C400C58459 /* iRoutePlannerTests.xctest */,
+				730802CC224AD5C400C58459 /* iRoutePlannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		730802AF224AD5BF00C58459 /* iRoutePlanner */ = {
+			isa = PBXGroup;
+			children = (
+				730802B0224AD5BF00C58459 /* AppDelegate.swift */,
+				730802B2224AD5BF00C58459 /* ViewController.swift */,
+				730802B4224AD5BF00C58459 /* Main.storyboard */,
+				730802B7224AD5C300C58459 /* Assets.xcassets */,
+				730802B9224AD5C300C58459 /* LaunchScreen.storyboard */,
+				730802BC224AD5C300C58459 /* Info.plist */,
+				73407CCA224ADD4E00C21AF1 /* Node.swift */,
+				73407CC6224ADCE600C21AF1 /* EdgeAdapter.swift */,
+				73407CC4224ADC9700C21AF1 /* DistanceMatrix.swift */,
+				73407CC8224ADD0E00C21AF1 /* GetEdgeWeight.swift */,
+			);
+			path = iRoutePlanner;
+			sourceTree = "<group>";
+		};
+		730802C4224AD5C400C58459 /* iRoutePlannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				730802C5224AD5C400C58459 /* iRoutePlannerTests.swift */,
+				730802C7224AD5C400C58459 /* Info.plist */,
+			);
+			path = iRoutePlannerTests;
+			sourceTree = "<group>";
+		};
+		730802CF224AD5C400C58459 /* iRoutePlannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				730802D0224AD5C400C58459 /* iRoutePlannerUITests.swift */,
+				730802D2224AD5C400C58459 /* Info.plist */,
+			);
+			path = iRoutePlannerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		730802AC224AD5BF00C58459 /* iRoutePlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 730802D5224AD5C400C58459 /* Build configuration list for PBXNativeTarget "iRoutePlanner" */;
+			buildPhases = (
+				730802A9224AD5BF00C58459 /* Sources */,
+				730802AA224AD5BF00C58459 /* Frameworks */,
+				730802AB224AD5BF00C58459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iRoutePlanner;
+			productName = iRoutePlanner;
+			productReference = 730802AD224AD5BF00C58459 /* iRoutePlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		730802C0224AD5C400C58459 /* iRoutePlannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 730802D8224AD5C400C58459 /* Build configuration list for PBXNativeTarget "iRoutePlannerTests" */;
+			buildPhases = (
+				730802BD224AD5C400C58459 /* Sources */,
+				730802BE224AD5C400C58459 /* Frameworks */,
+				730802BF224AD5C400C58459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				730802C3224AD5C400C58459 /* PBXTargetDependency */,
+			);
+			name = iRoutePlannerTests;
+			productName = iRoutePlannerTests;
+			productReference = 730802C1224AD5C400C58459 /* iRoutePlannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		730802CB224AD5C400C58459 /* iRoutePlannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 730802DB224AD5C400C58459 /* Build configuration list for PBXNativeTarget "iRoutePlannerUITests" */;
+			buildPhases = (
+				730802C8224AD5C400C58459 /* Sources */,
+				730802C9224AD5C400C58459 /* Frameworks */,
+				730802CA224AD5C400C58459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				730802CE224AD5C400C58459 /* PBXTargetDependency */,
+			);
+			name = iRoutePlannerUITests;
+			productName = iRoutePlannerUITests;
+			productReference = 730802CC224AD5C400C58459 /* iRoutePlannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		730802A5224AD5BF00C58459 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "BMW Fire";
+				TargetAttributes = {
+					730802AC224AD5BF00C58459 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					730802C0224AD5C400C58459 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 730802AC224AD5BF00C58459;
+					};
+					730802CB224AD5C400C58459 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 730802AC224AD5BF00C58459;
+					};
+				};
+			};
+			buildConfigurationList = 730802A8224AD5BF00C58459 /* Build configuration list for PBXProject "iRoutePlanner" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 730802A4224AD5BF00C58459;
+			productRefGroup = 730802AE224AD5BF00C58459 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				730802AC224AD5BF00C58459 /* iRoutePlanner */,
+				730802C0224AD5C400C58459 /* iRoutePlannerTests */,
+				730802CB224AD5C400C58459 /* iRoutePlannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		730802AB224AD5BF00C58459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730802BB224AD5C300C58459 /* LaunchScreen.storyboard in Resources */,
+				730802B8224AD5C300C58459 /* Assets.xcassets in Resources */,
+				730802B6224AD5BF00C58459 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730802BF224AD5C400C58459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730802CA224AD5C400C58459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		730802A9224AD5BF00C58459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73407CC5224ADC9700C21AF1 /* DistanceMatrix.swift in Sources */,
+				730802B3224AD5BF00C58459 /* ViewController.swift in Sources */,
+				73407CC7224ADCE600C21AF1 /* EdgeAdapter.swift in Sources */,
+				73407CCB224ADD4E00C21AF1 /* Node.swift in Sources */,
+				730802B1224AD5BF00C58459 /* AppDelegate.swift in Sources */,
+				73407CC9224ADD0E00C21AF1 /* GetEdgeWeight.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730802BD224AD5C400C58459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730802C6224AD5C400C58459 /* iRoutePlannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730802C8224AD5C400C58459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730802D1224AD5C400C58459 /* iRoutePlannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		730802C3224AD5C400C58459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 730802AC224AD5BF00C58459 /* iRoutePlanner */;
+			targetProxy = 730802C2224AD5C400C58459 /* PBXContainerItemProxy */;
+		};
+		730802CE224AD5C400C58459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 730802AC224AD5BF00C58459 /* iRoutePlanner */;
+			targetProxy = 730802CD224AD5C400C58459 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		730802B4224AD5BF00C58459 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				730802B5224AD5BF00C58459 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		730802B9224AD5C300C58459 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				730802BA224AD5C300C58459 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		730802D3224AD5C400C58459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		730802D4224AD5C400C58459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		730802D6224AD5C400C58459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iRoutePlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iRoutePlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		730802D7224AD5C400C58459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iRoutePlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iRoutePlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		730802D9224AD5C400C58459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iRoutePlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iRoutePlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iRoutePlanner.app/iRoutePlanner";
+			};
+			name = Debug;
+		};
+		730802DA224AD5C400C58459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iRoutePlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iRoutePlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iRoutePlanner.app/iRoutePlanner";
+			};
+			name = Release;
+		};
+		730802DC224AD5C400C58459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iRoutePlannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iRoutePlannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iRoutePlanner;
+			};
+			name = Debug;
+		};
+		730802DD224AD5C400C58459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iRoutePlannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iRoutePlannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iRoutePlanner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		730802A8224AD5BF00C58459 /* Build configuration list for PBXProject "iRoutePlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730802D3224AD5C400C58459 /* Debug */,
+				730802D4224AD5C400C58459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		730802D5224AD5C400C58459 /* Build configuration list for PBXNativeTarget "iRoutePlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730802D6224AD5C400C58459 /* Debug */,
+				730802D7224AD5C400C58459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		730802D8224AD5C400C58459 /* Build configuration list for PBXNativeTarget "iRoutePlannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730802D9224AD5C400C58459 /* Debug */,
+				730802DA224AD5C400C58459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		730802DB224AD5C400C58459 /* Build configuration list for PBXNativeTarget "iRoutePlannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730802DC224AD5C400C58459 /* Debug */,
+				730802DD224AD5C400C58459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 730802A5224AD5BF00C58459 /* Project object */;
+}
