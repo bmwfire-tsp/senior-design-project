@@ -20,7 +20,19 @@ class iRoutePlannerTests: XCTestCase {
     }
     
     func testGetETA() {
-        // Placeholder for Ryuto's Test
+        
+        // Given: Starting and ending locations
+        
+        let start = LocationNode(address: "Aiea")
+        let end = LocationNode(address: "Manoa")
+        
+        // When: We call the Google Maps API
+        
+        let weight = getETA(origin: start.address, destination: end.address)
+        
+        // Then: We should output a valid number
+        
+        XCTAssertNotNil(weight)
     }
     
     func testNode() {
@@ -33,5 +45,21 @@ class iRoutePlannerTests: XCTestCase {
         
         XCTAssertEqual(location.address, "Aiea")
     }
+    
+//    func testTSP() {
+//
+//        // Given: A constructed distance matrix and list of addresses
+//
+//        let d = DistanceMatrix()
+//        d.addLocations(locations: [LocationNode(address: "Aiea"), LocationNode(address: "Manoa"), LocationNode(address: "Kalihi"), LocationNode(address: "Mililani"), LocationNode(address: "Honolulu")])
+//
+//        // When: We call the TSP function
+//
+//        let t = TSP(locations: d.activeLocations, matrix: d, origin: LocationNode(address: "Aiea"))
+//
+//        // Then: The output list should be empty
+//
+//        XCTAssertEqual(t, [])
+//    }
     
 }

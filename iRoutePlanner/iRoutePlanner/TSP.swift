@@ -6,4 +6,6 @@
 //  Copyright © 2019 BMW Fire. All rights reserved.
 //
 
-import Foundation
+func TSP(locations: Set<LocationNode>, matrix: DistanceMatrix, origin: LocationNode) -> Set<LocationNode> {
+    return []
+}
