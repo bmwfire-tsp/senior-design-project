@@ -51,14 +51,15 @@ class iRoutePlannerTests: XCTestCase {
 //        // Given: A constructed distance matrix and list of addresses
 //
 //        let d = DistanceMatrix()
-//        d.addLocations(locations: [LocationNode(address: "Aiea"), LocationNode(address: "Manoa"), LocationNode(address: "Kalihi"), LocationNode(address: "Mililani"), LocationNode(address: "Honolulu")])
+//        d.addLocations(locations: [LocationNode(address: "one"), LocationNode(address: "two"), LocationNode(address: "three"), LocationNode(address: "four")])
 //
 //        // When: We call the TSP function
 //
-//        let t = TSP(locations: d.activeLocations, matrix: d, origin: LocationNode(address: "Aiea"))
+//        let t = TSP(locations: d.activeLocations, matrix: d, origin: LocationNode(address: "one"))
 //
-//        // Then: The output list should be empty
+//        // Then: There should be 5 elements in activeLocations and output list should be empty
 //
+//        XCTAssertEqual(d.activeLocations.count, 4)
 //        XCTAssertEqual(t, [])
 //    }
     
