@@ -30,54 +30,60 @@ func permutations(locations: [Int]) -> [[Int]] {
 
 func TSP(locations: Set<LocationNode>, matrix: DistanceMatrix, origin: LocationNode) -> [LocationNode] {
     
-    // Cast locations to type array
-    let locations = [LocationNode](locations)
-    
-    // Create a map of locations apart from origin
-    var map = [Int: LocationNode]()
-    var source = Int()
-    for i in 0..<locations.count {
-        if locations[i] != origin {
-            map[i] = locations[i]
-        } else {
-            source = i
-        }
-    }
-    
-    // Build array from map keys
-    var vertex = [Int]()
-    for m in map {
-        vertex.append(m.key)
-    }
-    
-    // Remove origin node from activeLocations
-    matrix.removeLocation(location: origin)
-    
-    // Build graph
-    var graph = [[NSInteger]]()
-    var subGraph = [NSInteger]()
-    
-    for location in locations {
-        for i in 0..<locations.count {
-            subGraph.append(matrix.getEdgeWeight(source: location, dest: locations[i]))
-        }
-        graph.append(subGraph)
-        subGraph = [NSInteger]()
-    }
-    
-    // Modified TSP Algorithm
-    var minPath = Double.infinity
-    var result = [LocationNode]()
-    for perm in permutations(locations: vertex) {
-        var current = 0
-        var k = source
-        for i in 0..<perm.count {
-            current += graph[k][perm[i]]
-            k = perm[i]
+//    // Cast locations to type array
+//    let locations = [LocationNode](locations)
+//
+//    // Create a map of locations apart from origin
+//    var map = [Int: LocationNode]()
+//    var source = Int()
+//    for i in 0..<locations.count {
+//        if locations[i] != origin {
+//            map[i] = locations[i]
+//        } else {
+//            source = i
+//        }
+//    }
+//
+//    // Build array from map keys
+//    var vertex = [Int]()
+//    for m in map {
+//        vertex.append(m.key)
+//    }
+//
+//    // Remove origin node from activeLocations
+//    matrix.removeLocation(location: origin)
+//
+//    // Build graph
+//    var graph = [[NSInteger]]()
+//    var subGraph = [NSInteger]()
+//
+//    for location in locations {
+//        for i in 0..<locations.count {
+//            subGraph.append(matrix.getEdgeWeight(source: location, dest: locations[i]))
+//        }
+//        graph.append(subGraph)
+//        subGraph = [NSInteger]()
+//    }
+//
+//    // Modified TSP Algorithm
+//    var minPath = Double.infinity
+//    var finalResult = [LocationNode]()
+//    for perm in permutations(locations: vertex) {
+//        var result = [LocationNode]()
+//        var current = 0
+//        var k = source
+//        for i in 0..<perm.count {
+//            current += graph[k][perm[i]]
+//            k = perm[i]
 //            result.append(map[perm[i]]!)
-        }
-        minPath = min(minPath, Double(current))
-    }
-    
-    return result
+//        }
+//
+//        if Double(current) < minPath {
+//            finalResult = result
+//            minPath = Double(current)
+//        }
+//    }
+//
+//    return finalResult
+    return []
 }

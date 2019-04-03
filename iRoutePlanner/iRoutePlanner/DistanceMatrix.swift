@@ -41,8 +41,8 @@ class DistanceMatrix: Matrix {
             matrix[source] = [:]
         }
         
-//        matrix[source]![dest] = edgeAdapter.getEdgeWeight(source: source, dest: dest)
-        matrix[source]![dest] = NSInteger(arc4random() % 100)
+        matrix[source]![dest] = edgeAdapter.getEdgeWeight(source: source, dest: dest)
+//        matrix[source]![dest] = NSInteger(arc4random() % 100)
     }
     
     public func updateEdgeWeights(locations: Set<LocationNode>) {

@@ -93,6 +93,7 @@
 				730802AE224AD5BF00C58459 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		730802AE224AD5BF00C58459 /* Products */ = {
 			isa = PBXGroup;
