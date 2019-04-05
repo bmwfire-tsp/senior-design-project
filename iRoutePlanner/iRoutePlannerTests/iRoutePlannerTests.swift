@@ -104,8 +104,12 @@ class iRoutePlannerTests: XCTestCase {
 
         let d = DistanceMatrix()
         let start = LocationNode(address: "Wahiawa")
-        d.addLocations(locations: [start, LocationNode(address: "Aiea"), LocationNode(address: "Manoa"), LocationNode(address: "Kalihi"), LocationNode(address: "Honolulu")])
+        let addresses: Set = [LocationNode(address: "Wahiawa"), LocationNode(address: "Aiea"), LocationNode(address: "Manoa"), LocationNode(address: "Kalihi"), LocationNode(address: "Honolulu")]
 
+        // When: We add the addresses to the distance matrix
+        
+        d.addLocations(locations: addresses)
+        
         // When: We call the TSP function
 
         let t = TSP(locations: d.activeLocations, matrix: d, origin: start)
