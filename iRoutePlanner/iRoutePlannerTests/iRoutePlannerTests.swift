@@ -21,7 +21,9 @@ class iRoutePlannerTests: XCTestCase {
     
     func testGetETA() {
         
-        // Given: Starting and ending locations
+        // Given: Google Edge Adapter and Locations
+        
+        let adapter = GoogleEdgeAdapter()
         
         let start = LocationNode(address: "Aiea")
         let middle = LocationNode(address: "Manoa")
@@ -29,9 +31,9 @@ class iRoutePlannerTests: XCTestCase {
         
         // When: We call the Google Maps API
         
-        let weightStart = getETA(origin: start.address, destination: middle.address)
-        let weightMiddle = getETA(origin: middle.address, destination: end.address)
-        let weightEnd = getETA(origin: end.address, destination: start.address)
+        let weightStart = adapter.getETA(origin: start.address, destination: middle.address)
+        let weightMiddle = adapter.getETA(origin: middle.address, destination: end.address)
+        let weightEnd = adapter.getETA(origin: end.address, destination: start.address)
         
         // Then: We should output a valid number
         
