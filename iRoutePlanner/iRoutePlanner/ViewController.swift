@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var list: UITableView!
     
     var userInput: [String]! = []
+    var startingLocation: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,8 +58,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let orderedViewController = segue.destination as! OrderedViewController
         let d = DistanceMatrix()
-        let start = LocationNode(address: userInput[0])
-        var locationNodeArray: [LocationNode] = []
+        let start = LocationNode(address: startingLocation)
+        var locationNodeArray: [LocationNode] = [start]
         
         for i in userInput {
             locationNodeArray.append(LocationNode(address: i))
