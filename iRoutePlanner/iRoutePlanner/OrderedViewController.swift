@@ -39,9 +39,10 @@ extension OrderedViewController: UITableViewDataSource {
         if editingStyle == .delete {
             if (orderedArray.count > 1) {
                 let d = DistanceMatrix()
-                let start = orderedArray.remove(at: indexPath.row)
             
                 let addresses: Set = Set(orderedArray)
+                let start = orderedArray.remove(at: indexPath.row)
+
                 d.addLocations(locations: addresses)
                 let t = TSP(locations: d.activeLocations, matrix: d, origin: start)
                 orderedArray = t

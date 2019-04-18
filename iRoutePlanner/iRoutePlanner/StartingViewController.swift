@@ -28,13 +28,17 @@ class StartingViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        sendToNextViewController(self)
+        if (userInput.text != "") {
+            sendToNextViewController(self)
+        }
         return true
     }
     
     
     @IBAction func sendToNextViewController(_ sender: Any) {
-        performSegue(withIdentifier: "start", sender: self)
+        if (userInput.text != "") {
+            performSegue(withIdentifier: "start", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
