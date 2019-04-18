@@ -30,4 +30,26 @@ extension OrderedViewController: UITableViewDataSource {
         cell.textLabel?.text = orderedArray[indexPath.row].address
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            if (orderedArray.count > 1) {
+                let d = DistanceMatrix()
+                let start = orderedArray.remove(at: indexPath.row)
+            
+                let addresses: Set = Set(orderedArray)
+                d.addLocations(locations: addresses)
+                let t = TSP(locations: d.activeLocations, matrix: d, origin: start)
+                orderedArray = t
+                tableView.reloadData()
+            } else {
+                orderedArray.remove(at: indexPath.row)
+                tableView.reloadData()
+            }
+        }
+    }
 }
