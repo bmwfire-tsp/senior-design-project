@@ -54,3 +54,13 @@ extension OrderedViewController: UITableViewDataSource {
         }
     }
 }
+
+extension OrderedViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Hello")
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        print("Goodbye")
+    }
+}
