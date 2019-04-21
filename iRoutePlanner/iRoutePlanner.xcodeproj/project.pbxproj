@@ -17,7 +17,9 @@
 		73407CC5224ADC9700C21AF1 /* DistanceMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73407CC4224ADC9700C21AF1 /* DistanceMatrix.swift */; };
 		73407CC7224ADCE600C21AF1 /* EdgeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73407CC6224ADCE600C21AF1 /* EdgeAdapter.swift */; };
 		73407CCB224ADD4E00C21AF1 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73407CCA224ADD4E00C21AF1 /* Node.swift */; };
+		738C91B3226583B000CE5DE3 /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C91B2226583B000CE5DE3 /* StartingViewController.swift */; };
 		73A38917224B88FA0019F26F /* TSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A38916224B88FA0019F26F /* TSP.swift */; };
+		EEAAD0FD2263648A001560B0 /* OrderedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAAD0FC2263648A001560B0 /* OrderedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,9 @@
 		73407CC4224ADC9700C21AF1 /* DistanceMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceMatrix.swift; sourceTree = "<group>"; };
 		73407CC6224ADCE600C21AF1 /* EdgeAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeAdapter.swift; sourceTree = "<group>"; };
 		73407CCA224ADD4E00C21AF1 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		738C91B2226583B000CE5DE3 /* StartingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
 		73A38916224B88FA0019F26F /* TSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSP.swift; sourceTree = "<group>"; };
+		EEAAD0FC2263648A001560B0 /* OrderedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 			children = (
 				730802B0224AD5BF00C58459 /* AppDelegate.swift */,
 				730802B2224AD5BF00C58459 /* ViewController.swift */,
+				738C91B2226583B000CE5DE3 /* StartingViewController.swift */,
+				EEAAD0FC2263648A001560B0 /* OrderedViewController.swift */,
 				730802B4224AD5BF00C58459 /* Main.storyboard */,
 				730802B7224AD5C300C58459 /* Assets.xcassets */,
 				730802B9224AD5C300C58459 /* LaunchScreen.storyboard */,
@@ -269,7 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEAAD0FD2263648A001560B0 /* OrderedViewController.swift in Sources */,
 				73407CC5224ADC9700C21AF1 /* DistanceMatrix.swift in Sources */,
+				738C91B3226583B000CE5DE3 /* StartingViewController.swift in Sources */,
 				730802B3224AD5BF00C58459 /* ViewController.swift in Sources */,
 				73A38917224B88FA0019F26F /* TSP.swift in Sources */,
 				73407CC7224ADCE600C21AF1 /* EdgeAdapter.swift in Sources */,
@@ -449,8 +457,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7984EPBRJY;
 				INFOPLIST_FILE = iRoutePlanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,8 +477,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7984EPBRJY;
 				INFOPLIST_FILE = iRoutePlanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
