@@ -2,7 +2,7 @@
 //  EdgeAdapter.swift
 //  iRoutePlanner
 //
-//  Created by Brandon Wong on 3/25/19.
+//  Created by Ryuto Kitagawa on 3/25/19.
 //  Copyright © 2019 BMW Fire. All rights reserved.
 //
 
@@ -24,7 +24,7 @@ class GoogleEdgeAdapter: EdgeAdapter {
         let modDestination = destination.replacingOccurrences(of: " ", with: "+")
         var value: NSInteger = -2
         
-        let url = URL(string: "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=" + modOrigin + "&destinations=" + modDestination + "&key=" + apiKey)!
+        let url = URL(string: "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=\(modOrigin)&destinations=\(modDestination)&key=\(apiKey)")!
         
         let task:URLSessionDataTask = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let dataResponse = data else {value = -1; return}

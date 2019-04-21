@@ -2,7 +2,7 @@
 //  OrderedViewController.swift
 //  iRoutePlanner
 //
-//  Created by Guest Code User on 4/14/19.
+//  Created by Ryuto Kitagawa on 4/14/19.
 //  Copyright © 2019 BMW Fire. All rights reserved.
 //
 
@@ -13,6 +13,8 @@ class OrderedViewController: UIViewController {
     @IBOutlet weak var orderedTable: UITableView!
     
     var orderedArray: [LocationNode] = []
+    var startingLocation: LocationNode = LocationNode(address: "nil")
+    var back = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,26 @@ class OrderedViewController: UIViewController {
         orderedTable.delegate = self
     }
 
+    @IBAction func back(_ sender: Any) {
+        back = true
+        performSegue(withIdentifier: "back", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if back {
+            var addresses: [String] = []
+            
+            for i in orderedArray {
+                addresses.append(i.address)
+            }
+            
+            let viewController = segue.destination as! ViewController
+            viewController.start = startingLocation.address
+            viewController.userInput = addresses
+        }
+    }
 }
+
 extension OrderedViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return orderedArray.count
@@ -42,10 +63,10 @@ extension OrderedViewController: UITableViewDataSource, UITableViewDelegate {
                 let d = DistanceMatrix()
             
                 let addresses: Set = Set(orderedArray)
-                let start = orderedArray.remove(at: indexPath.row)
+                startingLocation = orderedArray.remove(at: indexPath.row)
 
                 d.addLocations(locations: addresses)
-                let t = TSP(locations: d.activeLocations, matrix: d, origin: start)
+                let t = TSP(locations: d.activeLocations, matrix: d, origin: startingLocation)
                 orderedArray = t
                 tableView.reloadData()
             } else {
@@ -57,12 +78,12 @@ extension OrderedViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let destinationNode = orderedArray[indexPath.row]
-        let destianation = destinationNode.address.replacingOccurrences(of: " ", with: "+")
+        let destination = destinationNode.address.replacingOccurrences(of: " ", with: "+")
         
         if UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!) {
-            UIApplication.shared.open(URL(string:"comgooglemaps://?saddr=&daddr=" + destianation)!)
+            UIApplication.shared.open(URL(string:"comgooglemaps://?saddr=&daddr=\(destination)")!)
         } else {
-            UIApplication.shared.open(URL(string:"https://www.google.com/maps/@42.585444,13.007813,6z")!)
+            UIApplication.shared.open(URL(string:"https://www.google.com/maps/dir//\(destination)")!)
         }
     }
 }

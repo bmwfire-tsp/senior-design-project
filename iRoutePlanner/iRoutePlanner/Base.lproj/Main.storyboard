@@ -140,11 +140,19 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYI-Q4-L4y">
-                                <rect key="frame" x="16" y="69" width="92" height="30"/>
+                                <rect key="frame" x="267" y="69" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back To Start"/>
                                 <connections>
                                     <segue destination="oYm-mh-cRu" kind="show" id="dOj-Ox-wb3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-HS-G2Y">
+                                <rect key="frame" x="16" y="69" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Destinations"/>
+                                <connections>
+                                    <action selector="back:" destination="cgM-1i-Rgv" eventType="touchUpInside" id="N0k-Dm-qkl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -163,6 +171,7 @@
                     </view>
                     <connections>
                         <outlet property="orderedTable" destination="8cV-6o-vxO" id="PfZ-SS-VdL"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="back" id="zaK-kE-IZz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEZ-s7-0Hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -174,4 +183,7 @@
         <image name="InputtedDestinations" width="750" height="1334"/>
         <image name="OpeningScreen" width="750" height="1334"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="zaK-kE-IZz"/>
+    </inferredMetricsTieBreakers>
 </document>
