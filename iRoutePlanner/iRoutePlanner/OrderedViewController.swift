@@ -17,10 +17,11 @@ class OrderedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         orderedTable.dataSource = self
+        orderedTable.delegate = self
     }
 
 }
-extension OrderedViewController: UITableViewDataSource {
+extension OrderedViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return orderedArray.count
     }
@@ -53,14 +54,8 @@ extension OrderedViewController: UITableViewDataSource {
             }
         }
     }
-}
-
-extension OrderedViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Hello")
-    }
-    
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        print("Goodbye")
     }
 }
