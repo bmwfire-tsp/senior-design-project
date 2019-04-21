@@ -56,6 +56,13 @@ extension OrderedViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Hello")
+        let destinationNode = orderedArray[indexPath.row]
+        let destianation = destinationNode.address.replacingOccurrences(of: " ", with: "+")
+        
+        if UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!) {
+            UIApplication.shared.open(URL(string:"comgooglemaps://?saddr=&daddr=" + destianation)!)
+        } else {
+            UIApplication.shared.open(URL(string:"https://www.google.com/maps/@42.585444,13.007813,6z")!)
+        }
     }
 }
