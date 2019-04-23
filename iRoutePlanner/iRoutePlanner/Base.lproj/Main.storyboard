@@ -139,17 +139,15 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYI-Q4-L4y">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYI-Q4-L4y">
                                 <rect key="frame" x="267" y="69" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back To Start"/>
                                 <connections>
                                     <segue destination="oYm-mh-cRu" kind="show" id="dOj-Ox-wb3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-HS-G2Y">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-HS-G2Y">
                                 <rect key="frame" x="16" y="69" width="141" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back to Destinations"/>
                                 <connections>
                                     <action selector="back:" destination="cgM-1i-Rgv" eventType="touchUpInside" id="N0k-Dm-qkl"/>
@@ -158,10 +156,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="KYI-Q4-L4y" firstAttribute="top" secondItem="d5I-U8-WFM" secondAttribute="top" constant="25" id="1IT-cO-H6P"/>
+                            <constraint firstItem="Ard-HS-G2Y" firstAttribute="leading" secondItem="d5I-U8-WFM" secondAttribute="leading" constant="16" id="5fL-Fj-12Y"/>
+                            <constraint firstItem="Ard-HS-G2Y" firstAttribute="top" secondItem="d5I-U8-WFM" secondAttribute="top" constant="25" id="9k9-DN-uXe"/>
+                            <constraint firstItem="d5I-U8-WFM" firstAttribute="trailing" secondItem="KYI-Q4-L4y" secondAttribute="trailing" constant="16" id="9rY-9C-BbQ"/>
                             <constraint firstItem="jFC-qm-N2U" firstAttribute="top" secondItem="Dcy-17-vsS" secondAttribute="top" id="Ae5-c4-uTM"/>
+                            <constraint firstItem="KYI-Q4-L4y" firstAttribute="leading" secondItem="Ard-HS-G2Y" secondAttribute="trailing" constant="110" id="Ixr-mU-tSk"/>
                             <constraint firstItem="8cV-6o-vxO" firstAttribute="bottom" secondItem="d5I-U8-WFM" secondAttribute="bottom" id="JV7-XL-U7G"/>
                             <constraint firstItem="jFC-qm-N2U" firstAttribute="trailing" secondItem="d5I-U8-WFM" secondAttribute="trailing" id="K8Q-nU-QnA"/>
                             <constraint firstItem="jFC-qm-N2U" firstAttribute="leading" secondItem="d5I-U8-WFM" secondAttribute="leading" id="LD4-M6-zRp"/>
+                            <constraint firstItem="KYI-Q4-L4y" firstAttribute="leading" secondItem="Ard-HS-G2Y" secondAttribute="trailing" constant="110" id="RWX-LN-7FL"/>
                             <constraint firstItem="8cV-6o-vxO" firstAttribute="leading" secondItem="d5I-U8-WFM" secondAttribute="leading" id="T1D-f3-PFN"/>
                             <constraint firstItem="8cV-6o-vxO" firstAttribute="trailing" secondItem="d5I-U8-WFM" secondAttribute="trailing" id="bsb-fu-z21"/>
                             <constraint firstItem="8cV-6o-vxO" firstAttribute="top" secondItem="d5I-U8-WFM" secondAttribute="top" constant="240" id="dyy-JV-sPG"/>
@@ -184,6 +188,6 @@
         <image name="OpeningScreen" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zaK-kE-IZz"/>
+        <segue reference="jNI-Ef-bFQ"/>
     </inferredMetricsTieBreakers>
 </document>
