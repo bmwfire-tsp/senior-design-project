@@ -80,10 +80,6 @@ extension OrderedViewController: UITableViewDataSource, UITableViewDelegate {
         let destinationNode = orderedArray[indexPath.row]
         let destination = destinationNode.address.replacingOccurrences(of: " ", with: "+")
         
-        if UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!) {
-            UIApplication.shared.open(URL(string:"comgooglemaps://?saddr=&daddr=\(destination)")!)
-        } else {
-            UIApplication.shared.open(URL(string:"https://www.google.com/maps/dir//\(destination)")!)
-        }
+        UIApplication.shared.open(URL(string:"https://www.google.com/maps/dir//\(destination)/Honolulu/Waikiki")!)
     }
 }
