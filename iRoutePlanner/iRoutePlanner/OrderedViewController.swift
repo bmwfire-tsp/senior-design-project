@@ -76,10 +76,20 @@ extension OrderedViewController: UITableViewDataSource, UITableViewDelegate {
         }
     }
     
+    @IBAction func navigateButton(_ sender: Any) {
+        var googleURL = "https://www.google.com/maps/dir/"
+        
+        for element in orderedArray {
+            googleURL += "/\(element.address)"
+        }
+        
+        UIApplication.shared.open(URL(string: googleURL)!)
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let destinationNode = orderedArray[indexPath.row]
         let destination = destinationNode.address.replacingOccurrences(of: " ", with: "+")
         
-        UIApplication.shared.open(URL(string:"https://www.google.com/maps/dir//\(destination)/Honolulu/Waikiki")!)
+        UIApplication.shared.open(URL(string:"https://www.google.com/maps/dir/\(startingLocation.address)/\(destination)")!)
     }
 }

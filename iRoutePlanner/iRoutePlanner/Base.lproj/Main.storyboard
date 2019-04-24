@@ -153,11 +153,20 @@
                                     <action selector="back:" destination="cgM-1i-Rgv" eventType="touchUpInside" id="N0k-Dm-qkl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrm-Yh-Wu7">
+                                <rect key="frame" x="130" y="107" width="115" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <action selector="navigateButton:" destination="cgM-1i-Rgv" eventType="touchUpInside" id="Awi-9j-IAI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KYI-Q4-L4y" firstAttribute="top" secondItem="d5I-U8-WFM" secondAttribute="top" constant="25" id="1IT-cO-H6P"/>
                             <constraint firstItem="Ard-HS-G2Y" firstAttribute="leading" secondItem="d5I-U8-WFM" secondAttribute="leading" constant="16" id="5fL-Fj-12Y"/>
+                            <constraint firstItem="Yrm-Yh-Wu7" firstAttribute="top" secondItem="Ard-HS-G2Y" secondAttribute="bottom" constant="8" id="7JD-5M-Foj"/>
                             <constraint firstItem="Ard-HS-G2Y" firstAttribute="top" secondItem="d5I-U8-WFM" secondAttribute="top" constant="25" id="9k9-DN-uXe"/>
                             <constraint firstItem="d5I-U8-WFM" firstAttribute="trailing" secondItem="KYI-Q4-L4y" secondAttribute="trailing" constant="16" id="9rY-9C-BbQ"/>
                             <constraint firstItem="jFC-qm-N2U" firstAttribute="top" secondItem="Dcy-17-vsS" secondAttribute="top" id="Ae5-c4-uTM"/>
@@ -166,7 +175,9 @@
                             <constraint firstItem="jFC-qm-N2U" firstAttribute="trailing" secondItem="d5I-U8-WFM" secondAttribute="trailing" id="K8Q-nU-QnA"/>
                             <constraint firstItem="jFC-qm-N2U" firstAttribute="leading" secondItem="d5I-U8-WFM" secondAttribute="leading" id="LD4-M6-zRp"/>
                             <constraint firstItem="KYI-Q4-L4y" firstAttribute="leading" secondItem="Ard-HS-G2Y" secondAttribute="trailing" constant="110" id="RWX-LN-7FL"/>
+                            <constraint firstItem="d5I-U8-WFM" firstAttribute="trailing" secondItem="Yrm-Yh-Wu7" secondAttribute="trailing" constant="130" id="SFq-aV-y1F"/>
                             <constraint firstItem="8cV-6o-vxO" firstAttribute="leading" secondItem="d5I-U8-WFM" secondAttribute="leading" id="T1D-f3-PFN"/>
+                            <constraint firstItem="Yrm-Yh-Wu7" firstAttribute="leading" secondItem="d5I-U8-WFM" secondAttribute="leading" constant="130" id="a6X-nq-FgX"/>
                             <constraint firstItem="8cV-6o-vxO" firstAttribute="trailing" secondItem="d5I-U8-WFM" secondAttribute="trailing" id="bsb-fu-z21"/>
                             <constraint firstItem="8cV-6o-vxO" firstAttribute="top" secondItem="d5I-U8-WFM" secondAttribute="top" constant="240" id="dyy-JV-sPG"/>
                             <constraint firstItem="jFC-qm-N2U" firstAttribute="bottom" secondItem="d5I-U8-WFM" secondAttribute="bottom" id="th0-yV-Hy6"/>
@@ -188,6 +199,6 @@
         <image name="OpeningScreen" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jNI-Ef-bFQ"/>
+        <segue reference="zaK-kE-IZz"/>
     </inferredMetricsTieBreakers>
 </document>
