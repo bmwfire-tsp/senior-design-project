@@ -80,7 +80,7 @@ extension OrderedViewController: UITableViewDataSource, UITableViewDelegate {
         var googleURL = "https://www.google.com/maps/dir/"
         
         for element in orderedArray {
-            googleURL += "/\(element.address)"
+            googleURL += "/\(element.address.replacingOccurrences(of: " ", with: "+"))"
         }
         
         UIApplication.shared.open(URL(string: googleURL)!)
@@ -90,6 +90,6 @@ extension OrderedViewController: UITableViewDataSource, UITableViewDelegate {
         let destinationNode = orderedArray[indexPath.row]
         let destination = destinationNode.address.replacingOccurrences(of: " ", with: "+")
         
-        UIApplication.shared.open(URL(string:"https://www.google.com/maps/dir/\(startingLocation.address)/\(destination)")!)
+        UIApplication.shared.open(URL(string:"https://www.google.com/maps/dir//\(destination)")!)
     }
 }

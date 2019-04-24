@@ -31,7 +31,7 @@ func permutations(locations: [Int]) -> [[Int]] {
 func TSP(locations: Set<LocationNode>, matrix: DistanceMatrix, origin: LocationNode) -> [LocationNode] {
     
     // Check if locations is empty
-    if locations.count == 0 {
+    if locations.count == 1 {
         return []
     }
     
