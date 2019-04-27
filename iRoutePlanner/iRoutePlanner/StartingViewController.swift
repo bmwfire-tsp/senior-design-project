@@ -44,7 +44,7 @@ class StartingViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! ViewController
         
-        vc.startingLocation = userInput.text!
+        vc.start = userInput.text!
     }
     
 }

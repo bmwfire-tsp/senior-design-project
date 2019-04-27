@@ -2,7 +2,7 @@
 //  DistanceMatrix.swift
 //  iRoutePlanner
 //
-//  Created by Brandon Wong on 3/25/19.
+//  Created by Sean Takafuji on 3/25/19.
 //  Copyright © 2019 BMW Fire. All rights reserved.
 //
 
@@ -42,6 +42,7 @@ class DistanceMatrix: Matrix {
         }
         
         matrix[source]![dest] = edgeAdapter.getEdgeWeight(source: source, dest: dest)
+//        matrix[source]![dest] = (NSInteger)(arc4random() % 42)
     }
     
     public func updateEdgeWeights(locations: Set<LocationNode>) {

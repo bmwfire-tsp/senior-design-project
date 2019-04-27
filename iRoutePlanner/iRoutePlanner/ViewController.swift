@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  iRoutePlanner
 //
-//  Created by Brandon Wong on 3/26/19.
+//  Created by Ryuto Kitagawa on 3/26/19.
 //  Copyright © 2019 BMW Fire. All rights reserved.
 //
 
@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var list: UITableView!
     
     var userInput: [String]! = []
-    var startingLocation: String = ""
+    var start: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let orderedViewController = segue.destination as! OrderedViewController
         let d = DistanceMatrix()
-        let start = LocationNode(address: startingLocation)
+        let start = LocationNode(address: self.start)
         var locationNodeArray: [LocationNode] = [start]
         
         for i in userInput {
@@ -68,6 +68,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let addresses: Set = Set(locationNodeArray)
         d.addLocations(locations: addresses)
         let t = TSP(locations: d.activeLocations, matrix: d, origin: start)
+        orderedViewController.startingLocation = start
         orderedViewController.orderedArray = t
     }
 }
