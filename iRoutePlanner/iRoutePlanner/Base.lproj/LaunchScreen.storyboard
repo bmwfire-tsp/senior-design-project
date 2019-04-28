@@ -18,12 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HelloWorld" translatesAutoresizingMaskIntoConstraints="NO" id="7T5-RL-v2p">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="7T5-RL-v2p">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97994251939999999" green="0.034053818069999998" blue="0.073953391889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="7T5-RL-v2p" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0xJ-3l-tlk"/>
+                            <constraint firstItem="7T5-RL-v2p" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Q0X-XH-FNt"/>
+                            <constraint firstItem="7T5-RL-v2p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="isF-x4-Wzl"/>
+                            <constraint firstAttribute="bottom" secondItem="7T5-RL-v2p" secondAttribute="bottom" id="nDQ-rv-mtt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -33,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="HelloWorld" width="125" height="270.66665649414062"/>
+        <image name="splash" width="375" height="812"/>
     </resources>
 </document>
