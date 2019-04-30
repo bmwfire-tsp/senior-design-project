@@ -83,5 +83,17 @@ extension ViewController: UITableViewDataSource {
         cell.textLabel?.text = userInput[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            userInput.remove(at: indexPath.row)
+            list.reloadData()
+        }
+    }
+    
 }
 
