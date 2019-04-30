@@ -150,12 +150,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InputtedDestinations" translatesAutoresizingMaskIntoConstraints="NO" id="jFC-qm-N2U">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="route" translatesAutoresizingMaskIntoConstraints="NO" id="jFC-qm-N2U">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8cV-6o-vxO">
-                                <rect key="frame" x="0.0" y="284" width="375" height="494"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8cV-6o-vxO">
+                                <rect key="frame" x="0.0" y="191" width="375" height="494"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderedCell" id="XmL-79-Ne9">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -164,52 +166,37 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYI-Q4-L4y">
-                                <rect key="frame" x="267" y="69" width="92" height="30"/>
-                                <state key="normal" title="Back To Start"/>
-                                <connections>
-                                    <segue destination="oYm-mh-cRu" kind="show" id="dOj-Ox-wb3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-HS-G2Y">
-                                <rect key="frame" x="16" y="69" width="141" height="30"/>
-                                <state key="normal" title="Back to Destinations"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-HS-G2Y">
+                                <rect key="frame" x="5" y="44" width="76" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="back:" destination="cgM-1i-Rgv" eventType="touchUpInside" id="N0k-Dm-qkl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrm-Yh-Wu7">
-                                <rect key="frame" x="130" y="107" width="115" height="30"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Map"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrm-Yh-Wu7">
+                                <rect key="frame" x="16" y="693" width="343" height="51"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="navigateButton:" destination="cgM-1i-Rgv" eventType="touchUpInside" id="Awi-9j-IAI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYI-Q4-L4y">
+                                <rect key="frame" x="286" y="47" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oYm-mh-cRu" kind="show" id="dOj-Ox-wb3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="KYI-Q4-L4y" firstAttribute="top" secondItem="d5I-U8-WFM" secondAttribute="top" constant="25" id="1IT-cO-H6P"/>
-                            <constraint firstItem="Ard-HS-G2Y" firstAttribute="leading" secondItem="d5I-U8-WFM" secondAttribute="leading" constant="16" id="5fL-Fj-12Y"/>
-                            <constraint firstItem="Yrm-Yh-Wu7" firstAttribute="top" secondItem="Ard-HS-G2Y" secondAttribute="bottom" constant="8" id="7JD-5M-Foj"/>
-                            <constraint firstItem="Ard-HS-G2Y" firstAttribute="top" secondItem="d5I-U8-WFM" secondAttribute="top" constant="25" id="9k9-DN-uXe"/>
-                            <constraint firstItem="d5I-U8-WFM" firstAttribute="trailing" secondItem="KYI-Q4-L4y" secondAttribute="trailing" constant="16" id="9rY-9C-BbQ"/>
-                            <constraint firstItem="jFC-qm-N2U" firstAttribute="top" secondItem="Dcy-17-vsS" secondAttribute="top" id="Ae5-c4-uTM"/>
-                            <constraint firstItem="KYI-Q4-L4y" firstAttribute="leading" secondItem="Ard-HS-G2Y" secondAttribute="trailing" constant="110" id="Ixr-mU-tSk"/>
-                            <constraint firstItem="8cV-6o-vxO" firstAttribute="bottom" secondItem="d5I-U8-WFM" secondAttribute="bottom" id="JV7-XL-U7G"/>
-                            <constraint firstItem="jFC-qm-N2U" firstAttribute="trailing" secondItem="d5I-U8-WFM" secondAttribute="trailing" id="K8Q-nU-QnA"/>
-                            <constraint firstItem="jFC-qm-N2U" firstAttribute="leading" secondItem="d5I-U8-WFM" secondAttribute="leading" id="LD4-M6-zRp"/>
-                            <constraint firstItem="KYI-Q4-L4y" firstAttribute="leading" secondItem="Ard-HS-G2Y" secondAttribute="trailing" constant="110" id="RWX-LN-7FL"/>
-                            <constraint firstItem="d5I-U8-WFM" firstAttribute="trailing" secondItem="Yrm-Yh-Wu7" secondAttribute="trailing" constant="130" id="SFq-aV-y1F"/>
-                            <constraint firstItem="8cV-6o-vxO" firstAttribute="leading" secondItem="d5I-U8-WFM" secondAttribute="leading" id="T1D-f3-PFN"/>
-                            <constraint firstItem="Yrm-Yh-Wu7" firstAttribute="leading" secondItem="d5I-U8-WFM" secondAttribute="leading" constant="130" id="a6X-nq-FgX"/>
-                            <constraint firstItem="8cV-6o-vxO" firstAttribute="trailing" secondItem="d5I-U8-WFM" secondAttribute="trailing" id="bsb-fu-z21"/>
-                            <constraint firstItem="8cV-6o-vxO" firstAttribute="top" secondItem="d5I-U8-WFM" secondAttribute="top" constant="240" id="dyy-JV-sPG"/>
-                            <constraint firstItem="jFC-qm-N2U" firstAttribute="bottom" secondItem="d5I-U8-WFM" secondAttribute="bottom" id="th0-yV-Hy6"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="d5I-U8-WFM"/>
                     </view>
                     <connections>
@@ -219,15 +206,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEZ-s7-0Hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="133"/>
+            <point key="canvasLocation" x="1196" y="132.26600985221674"/>
         </scene>
     </scenes>
     <resources>
-        <image name="InputtedDestinations" width="750" height="1334"/>
         <image name="destinations" width="375" height="812"/>
+        <image name="route" width="375" height="812"/>
         <image name="start" width="375" height="812"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jNI-Ef-bFQ"/>
+        <segue reference="zaK-kE-IZz"/>
     </inferredMetricsTieBreakers>
 </document>
